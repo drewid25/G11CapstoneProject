@@ -1,5 +1,5 @@
 import {useState,useRef} from 'react'
-
+import Login from "./pages/login";
 
 function App() {
   const refContainer = useRef(null)
@@ -13,11 +13,9 @@ function App() {
   return (
     
     <div className="App">
-      <Login/>
-      <form className="bg-black h-100 w-100" onSubmit={handleSubmit}>
-        <input type="text" ref={refContainer} />
-        <button type="submit">Submit</button>
-    </form>
+      <Login />
+
+    
     </div>
   );
 }

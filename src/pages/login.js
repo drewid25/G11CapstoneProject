@@ -2,10 +2,12 @@ import React from 'react'
 import '../index.css'
 function Login() {
   return (
-        <div className="signIn-page ">
+    <div>
+        <div className="flex flex-wrap justify-center mt-20">
+          
       <br />
       <br />
-      <div className="p-10 bg-slate-50">
+      <div className="p-10 bg-slate-500">
         <h2 className="text-center text-3xl leading-9 
           font-extrabold text-gray-800"
         >
@@ -15,27 +17,27 @@ function Login() {
         <br />
         <form >
           <div className="flex justify-center">
-            <div className="lg:w-1/3 md:w-2/3 w-full">
+            <div className="lg:w-full md:w-2/3 w-full">
               <label 
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="email"
+              htmlFor="text"
               >
-                Email
+                Username
               </label>
               <input 
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email Address"
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full 
-                  py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username"
+                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full  
+                  py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500 md:"
                 required
               />
             </div>
           </div>
 
           <div className="flex justify-center mt-4">
-            <div className="lg:w-1/3 md:w-2/3 w-full">
+            <div className="lg:w-full md:w-2/3 w-full">
               <label 
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="password"
@@ -64,8 +66,15 @@ function Login() {
               Sign In
             </button>
           </div>
+          <p className="text-center text-l leading-9 
+          font-extrabold text-gray-800">
+            not yet registered?  
+              <a href="#" className="font-medium text-Teal-600 hover:underline"> Register</a>
+        </p>
         </form>
+        
       </div>
+    </div>
     </div>
   )
 }

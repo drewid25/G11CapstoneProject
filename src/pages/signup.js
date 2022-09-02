@@ -45,7 +45,7 @@ function Signup() {
                 for="text"
                 className="block text-sm font-semibold text-gray-800"
               >
-                Contact number:
+                Contact numbers:
               </label>
               <input
                 type="Text"
